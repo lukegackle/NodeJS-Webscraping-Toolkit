@@ -1,4 +1,4 @@
-![Image of Lukes Toolkit Logo](https://1.bp.blogspot.com/-uKUWYSXKTac/XDmYBmg_iPI/AAAAAAABo0o/oiw7r-ZkUmUTU437UVSj1NnbP4EcYHqXACK4BGAYYCw/w800/logo.png)
+![Image of Lukes Toolkit Logo](https://1.bp.blogspot.com/-uKUWYSXKTac/XDmYBmg_iPI/AAAAAAABo0o/oiw7r-ZkUmUTU437UVSj1NnbP4EcYHqXACK4BGAYYCw/w300/logo.png)
 # NodeJS-Webscraping-Toolkit
 
 This repository contains a group of templates for performing web scraping with nodejs, these templates are designed to be used in a Google Cloud environment as a Google Cloud function in a node.js environment, however you can certainly take this code and tweak it to work in different environments.
