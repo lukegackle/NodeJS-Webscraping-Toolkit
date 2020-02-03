@@ -8,5 +8,6 @@ The three main templates this repository contains is as follows:
 * Web Scraping from cloudflare sites
 * Web Scraping from regular sites
 * Web Scraping from sites that require client side JavaScript to run
+  * Guide: [Web scraping with Puppeteer in Google Cloud Functions](https://lukestoolkit.blogspot.com/2020/02/web-scraping-with-puppeteer-in-google.html)
 
 You can find more information about these templates at my blog including detailed guides to get them setup at [Lukes Toolkit](https://lukestoolkit.blogspot.com)
