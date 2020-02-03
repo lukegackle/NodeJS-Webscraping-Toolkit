@@ -23,10 +23,13 @@ exports.helloWorld = (req, res) => {
       await page.setDefaultTimeout(0) //Wait Maximum amount of time for page to load
       await page.setDefaultNavigationTimeout(0) //Wait Maximum amount of time for page to load
       await page.goto("https://lukestoolkit.blogspot.com", {waitUntil: 'load', timeout: 0})
-      await page.waitForFunction('document.querySelector("span#SPANID").innerText.includes("Content")') //Wait for an element to contain particular text
-      await page.waitFor(1000) //Wait for 1000
-	  var mentions = await page.$eval("span#SPANID", node => node.textContent); //Get text content of element
+      //await page.waitForFunction('document.querySelector("span#SPANID").innerText.includes("Content")') //Wait for an element to contain particular text
+      //await page.waitFor(1000) //Wait for 1000
+      //var mentions = await page.$eval("span#SPANID", node => node.textContent); //Get text content of element
       
+      //DEMO Test to show code works in guide
+      var htmlBody = await page.content();
+      res.send(htmlBody);
       
       //Further usage examples from Puppeteer docs
       //const checkboxStatus = await page.$eval('#defaultCheck1', input => { return input.checked })
@@ -42,7 +45,7 @@ exports.helloWorld = (req, res) => {
 	  //await page.screenshot({path: 'example.png'});
 	  
 	  //await page.pdf({path: 'hn.pdf', format: 'A4'});
-
+	
 
       await browser.close() //Close the browser when finished
     })()
