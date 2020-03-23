@@ -20,7 +20,7 @@ exports.helloWorld = (req, res) => {
 	//Sample way to get url parameters
     var GETParameter = req.query.GETParameter;
  
-		
+	//NOTE: This only works with Cloudflare protected sites, the Lukes Toolkit blog is not protected with Cloudflare
 	cf.get("https://lukestoolkit.blogspot.com")
 	  .then(function(response) {
 		
