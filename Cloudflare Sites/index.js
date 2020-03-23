@@ -21,7 +21,7 @@ exports.helloWorld = (req, res) => {
     var GETParameter = req.query.GETParameter;
  
 		
-	.get("https://lukestoolkit.blogspot.com")
+	cf.get("https://lukestoolkit.blogspot.com")
 	  .then(function(response) {
 		
 		var $$ = cheerio.load(response);
