@@ -33,7 +33,7 @@ exports.helloWorld = (req, res) => {
 		var title = data.find("h1").text(); //returns text content of h1 tag
 		
 		
-		res.status(200).send(title);
+		res.status(200).send(response);
 		
 	  })
 	  .catch(function (err) {
