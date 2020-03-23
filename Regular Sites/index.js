@@ -51,20 +51,20 @@ exports.helloWorld = (req, res) => {
 		var setcookies = response.headers["set-cookie"]; //If response headers are JSON and if website returns a set-cookie object
 		var dt = Date.now();
 
-		setcookies.forEach(function(cookie) {
-		  rp.jar().setCookie(cookie, 'https://domain.com', {expires: dt });  
-		});
+		//setcookies.forEach(function(cookie) {
+		//  rp.jar().setCookie(cookie, 'https://domain.com', {expires: dt });  
+		//});
 				
 		//
 		var $$ = cheerio.load(response.body);
 		
-		var data = $$("#PageElementID");
-			
+		var data = $$(".blog-name > a").attr('src');
+		res.status(200).send(response.body);
 		//Examples on how to get data from the page
-		var rows = data.find("table > tr").length; //returns number of tr elements
-		var title = data.find("h1").text(); //returns text content of h1 tag
+		//var rows = data.find("table > tr").length; //returns number of tr elements
+		//var title = data.find("h1").text(); //returns text content of h1 tag
 	  
-	  }); 
+	  }) 
 	  .catch(function (err) {
 		// Crawling failed...
 		res.status(200).send(err);
