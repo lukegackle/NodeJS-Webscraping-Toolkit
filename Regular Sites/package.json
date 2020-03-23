@@ -4,7 +4,6 @@
    "dependencies": {
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "cheerio": "^0.22.0",
-    "escape-html": "^1.0.3"
+    "cheerio": "^0.22.0"
   }
 }
