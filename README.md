@@ -6,7 +6,9 @@ This repository contains a group of templates for performing web scraping with n
 The three main templates this repository contains is as follows: 
 
 * Web Scraping from cloudflare sites
+  * Guide: [Web Scraping with Cloud Scraper in Google Cloud Functions](https://lukestoolkit.blogspot.com/2020/03/web-scraping-with-cloud-scraper-in.html)
 * Web Scraping from regular sites
+  * Guide: [Web Scraping with Request Promise in Google Cloud Functions](https://lukestoolkit.blogspot.com/2020/03/web-scraping-with-request-promise-in.html)
 * Web Scraping from sites that require client side JavaScript to run
   * Guide: [Web scraping with Puppeteer in Google Cloud Functions](https://lukestoolkit.blogspot.com/2020/02/web-scraping-with-puppeteer-in-google.html)
 
